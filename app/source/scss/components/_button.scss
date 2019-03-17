@@ -1,12 +1,19 @@
 .btn {
-  padding: 0.6875rem 0.75rem;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
 
   &--resume {
     background-color: $blue;
-    transition: 0.3s ease-in-out;
+    padding: rem(11px) rem(12px);
+  }
+
+  &--view-more{
+    background-color: black;
+    padding: rem(10px) rem(30px);
   }
 
   &:hover {
     background-color: $blue2;
   }
+
 }

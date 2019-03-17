@@ -1,0 +1,106 @@
+.projects {
+  position: relative;
+
+  &__heading{
+    color: $dark-gray;
+    text-align: center;
+    font-size: rem(12px);
+    font-weight: $bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 400px){
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1180px){
+      position: absolute;
+      top:20px;
+      left: -80px;
+      transform: rotate(-90deg);
+    }
+
+  }
+
+
+  & img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  &__overlay{
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  &__item:hover &__overlay {
+    opacity: 1;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 65px;
+    height: 0;
+    border-bottom: 90px solid $blue;
+    border-left: 90px solid transparent;
+    z-index: 1;
+  }
+
+  &__email:after {
+    position: absolute;
+    top: 60px;
+    left: -55px;
+    content: url("/assets/img/link.png");
+  }
+
+  &__github:after {
+    position: absolute;
+    top: 60px;
+    left: -25px;
+    content: url("/assets/img/github.png");
+  }
+
+  @media screen and (min-width: 600px){
+
+    &__container{
+      display: flex;
+    }
+
+    &__column-1 {
+      margin-right: 20px;
+    }
+  }
+
+  &__btn{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+}

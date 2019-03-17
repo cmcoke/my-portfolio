@@ -1,8 +1,9 @@
 .heading{
 
+  // intro
   &--intro{
-    font-size: responsive rem(21px) rem(70px);
-    font-weight: 700;
+    font-size: responsive rem(21px) rem(55px);
+    font-weight: $bold;
     text-transform: uppercase;
     width: 283px;
     margin-bottom: 5px;
@@ -17,4 +18,22 @@
   &--title{
     color: $blue2;
   }
+
+  // projects
+  &__company,
+  &__email-type{
+    text-transform: uppercase;
+  }
+
+  &__company {
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+
+  &__email-type {
+    color: $blue;
+    font-weight: $bold;
+    margin-top: 5px;
+  }
+
 }
