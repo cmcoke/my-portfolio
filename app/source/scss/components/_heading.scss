@@ -1,0 +1,20 @@
+.heading{
+
+  &--intro{
+    font-size: responsive rem(21px) rem(70px);
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 283px;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+    @media screen and (min-width: 400px){
+      width: 100%;
+    }
+
+  }
+
+  &--title{
+    color: $blue2;
+  }
+}
