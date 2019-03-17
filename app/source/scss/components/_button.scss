@@ -1,0 +1,12 @@
+.btn {
+  padding: 0.6875rem 0.75rem;
+
+  &--resume {
+    background-color: $blue;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: $blue2;
+  }
+}
