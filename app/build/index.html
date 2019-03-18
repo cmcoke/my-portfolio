@@ -52,6 +52,7 @@
         <h1 class="heading heading--intro">Hello, I&#39;m Charles Coke</h1>
         <h1 class="heading heading--intro">An <span class="heading--title">Email Developer</span></h1>
         <h1 class="heading heading--intro">From Kingston, Jamaica.</h1>
+        <p class="intro__description">I love creating beautiful, simple, effective & responsive emails. Shown below are some of my latest projects.</p>
       </section>
 
       <!-- PROJECTS SECTION -->
@@ -151,7 +152,7 @@
 
         <p class="about__heading">About Me</p>
 
-        <h3 class="heading heading--about">My story so far:</h3>
+        <h3 class="heading heading--about">My short bio:</h3>
 
         <p class="about__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare sodales dolor nec auctor. Morbi eleifend mi eget libero scelerisque, quis pharetra mi egestas. Proin ac efficitur leo. Morbi sed iaculis mi, vel
           pharetra libero.
@@ -181,7 +182,7 @@
 
           <ul>
             <h4 class="about__technologies">Work Methods & Tools</h4>
-            <li>BEM</li>
+            <li>B.E.M</li>
             <li>NPM Scripts</li>
             <li>Gulp</li>
             <li>Git</li>
@@ -200,23 +201,38 @@
       <!-- CONTACT SECTION -->
       <section class="contact">
 
-        <h3 class="heading heading--contact">Contact Me</h3>
+        <h1 class="heading heading--contact">Contact Me</h1>
 
-        <div class="contact__container">
+        <div class="contact__wrapper">
 
           <div class="contact__text-content">
             <p>Are you intrested in working with me? Feel free to contact me and I will get back to you as soon as possible.</p>
           </div>
 
-          <div class="contact__form">
-            <form action="#">
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Subject">
-              <input type="text" placeholder="Message">
-              <input type="submit" value="Send Message">
-            </form>
-          </div>
+          <form action="#" class="contact__container">
+
+            <div class="contact__form contact__name">
+              <input type="text" id="name" class="contact__field" placeholder="Name" required>
+              <label for="name" class="contact__label">Name</label>
+            </div>
+
+            <div class="contact__form contact__email">
+              <input type="email" id="email" class="contact__field" placeholder="Email" autocomplete="none" required>
+              <label for="email" class="contact__label">Email</label>
+            </div>
+
+            <div class="contact__form contact__subject">
+              <input type="text" id="subject" class="contact__field" placeholder="Subject" required>
+              <label for="subject" class="contact__label">Subject</label>
+            </div>
+
+            <div class="contact__form contact__message">
+              <textarea id="message" class="contact__textarea" placeholder="Message" rows="6" required></textarea>
+              <label for="message" class="contact__label">Message</label>
+            </div>
+
+            <input type="submit" value="Send" class="btn btn--contact">
+          </form>
 
         </div>
 

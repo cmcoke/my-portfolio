@@ -1,4 +1,9 @@
 .about{
+
+  @media screen and (min-width: 768px){
+    padding: rem(11px) 0;
+  }
+
   position: relative;
 
   &__heading{
@@ -16,7 +21,7 @@
 
     @media screen and (min-width: 1180px){
       position: absolute;
-      top:20px;
+      top:60px;
       left: -80px;
       transform: rotate(-90deg);
     }
@@ -30,7 +35,7 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 700px){
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
   }
@@ -52,7 +57,7 @@
   }
 
   & ul{
-    margin: -10px 0 0 0;
+    margin: -2px 0 0 0;
     padding: 0;
     text-align: center;
   }
