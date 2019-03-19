@@ -1,0 +1,28 @@
+.footer{
+  background-color: white;
+  &__name{
+    font-size: rem(10px);
+    font-weight: $semi-bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    & a{
+      color: $blue;
+    }
+  }
+
+  &__social-media{
+    text-align: center;
+
+    & a{
+      margin-left: 5px;
+    }
+  }
+
+  @media screen and (min-width: 600px){
+    &__content{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,17 +1,20 @@
 .contact {
+  border-top: 1px solid #F6F4F4;
+  background-color: white;
+  padding: 0px 5px 0px 5px;
 
   @media screen and (min-width: 768px){
-    padding: rem(11px) 0;
+    padding: rem(11px) rem(10px);
   }
 
   &__text-content {
     font-size: rem(16px);
     font-weight: $semi-bold;
     line-height: 30px;
-    margin-top: -9px;
+    margin-top: -10px;
 
     @media screen and (min-width: 768px){
-      margin-top: 3px;
+      margin-top: 5px;
     }
   }
 
