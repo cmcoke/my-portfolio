@@ -1,5 +1,15 @@
 .header{
 
+  @media screen and (min-width: 800px){
+    position: fixed;
+    top:0;
+    background-color: white;
+    border-bottom: 1px solid $light-gray;
+    width: 100%;
+    z-index: 1;
+    height: 85px;
+  }
+
   &__mobile-menu-container{
     display: flex;
     align-items: center;
@@ -12,12 +22,12 @@
   }
 
   &__menu-icon{
-    width: 20px;
-    height: 19px;
-    position: fixed;
-    top:35px;
-    right: 23px;
-    z-index: 11;
+  width: 20px;
+  height: 19px;
+  position: fixed;
+  top:35px;
+  right: 23px;
+  z-index: 11;
 
     &::before{
       content: "";

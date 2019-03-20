@@ -1,9 +1,10 @@
 .navigation {
+
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 25%;
+  right: 30%;
   z-index: 10;
   transform: translateX(-100%);
   transition: transform ease-out 250ms;
@@ -36,7 +37,7 @@
 
   }
 
-  ul {
+  & ul{
     margin: 0;
     padding: 0;
     display: flex;
@@ -47,19 +48,18 @@
     background: white;
     border: 1px solid $light-gray;
 
-    @media screen and (min-width: 800px) {
-      flex-direction: row;
+    @media screen and (min-width: 800px){
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
       background: none;
       border: none;
       height: auto;
-      padding-top: 35px;
+      padding-top: 15px;
     }
-
   }
 
-  li {
+  & li {
     border-bottom: 1px solid $light-gray;
     text-align: center;
 
@@ -70,7 +70,8 @@
 
   }
 
-  a {
+  & a {
+
     display: inline-block;
     color: $blue;
     font-size: rem(15px);
@@ -82,17 +83,22 @@
 
     @media screen and (min-width: 800px) {
       display: inline;
-      color: $blue;
+      color: $dark-gray;
       font-size: rem(12px);
-      font-weight: $bold;
+      font-weight: $semi-bold;
       letter-spacing: 3px;
       width: 62px;
       height: 16px;
       text-transform: uppercase;
       padding: 0;
+      transition: .3s ease-out;
+
+      &:hover{
+        color: $blue;
+      }
+
     }
 
   }
-
 
 }

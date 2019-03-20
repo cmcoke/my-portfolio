@@ -15,10 +15,10 @@
 <body>
   <div class="content">
 
-    <div class="container">
+    <!-- HEADER SECTION  -->
+    <header class="header">
 
-      <!-- HEADER SECTION  -->
-      <header class="header">
+      <div class="container">
 
         <!-- mobile nav -->
         <div class="header__mobile-menu-container">
@@ -31,18 +31,23 @@
         <!-- desktop nav -->
         <nav class="navigation">
           <ul>
-            <li><a href="#projects" id="projects-link">Projects</a></li>
-            <li><a href="#about" id="about-link">About</a></li>
-            <li class="navigation__hideOnMobile"><a href="index.html"><img src="/assets/img/profile.png" alt=""></a></li>
-            <li><a href="#contact" id="contact-link">Contact</a></li>
+            <li><a href="#projects" class="scroll" id="projects-link">Projects</a></li>
+            <li><a href="#about" class="scroll" id="about-link">About</a></li>
+            <li class="navigation__hideOnMobile"><a href="#intro" class="scroll"><img src="/assets/img/profile.png" alt=""></a></li>
+            <li><a href="#contact" class="scroll" id="contact-link">Contact</a></li>
             <li><a href="#">Resume</a></li>
           </ul>
         </nav>
 
-      </header>
+      </div>
+
+
+    </header>
+
+    <div class="container">
 
       <!-- INTRO SECTION -->
-      <section class="intro">
+      <section class="intro" id="intro">
         <h1 class="heading heading--intro">Hello, I&#39;m Charles Coke</h1>
         <h1 class="heading heading--intro">An <span class="heading--title">Email Developer</span></h1>
         <h1 class="heading heading--intro">From Kingston, Jamaica.</h1>
@@ -50,7 +55,7 @@
       </section>
 
       <!-- PROJECTS SECTION -->
-      <section class="projects">
+      <section class="projects" id="projects">
 
         <p class="projects__heading">Projects</p>
 
@@ -142,7 +147,7 @@
       </section>
 
       <!-- ABOUT SECTION -->
-      <section class="about">
+      <section class="about" id="about">
 
         <p class="about__heading">About Me</p>
 
@@ -194,7 +199,7 @@
     </div>
 
     <!-- CONTACT SECTION -->
-    <section class="contact">
+    <section class="contact" id="contact">
 
       <div class="container">
         <h1 class="heading heading--contact">Contact Me</h1>
