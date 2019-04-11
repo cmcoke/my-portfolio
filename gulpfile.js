@@ -36,7 +36,6 @@ let browserSync = require('browser-sync').create();
 // Images plugins
 let images = require('gulp-imagemin');
 
-
 // Project Variables
 
 let styleSrc = './app/source/scss/**/*.scss';
@@ -111,7 +110,6 @@ function vendor(done) {
     .pipe(dest('./app/build/assets/scripts'));
   done();
 };
-
 
 
 // Watch for changes

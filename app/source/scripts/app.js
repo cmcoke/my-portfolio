@@ -31,6 +31,7 @@ $(document).ready(function() {
     $('.projects__item:hidden').slice(0, 4).slideDown();
     if ($('.projects__item:hidden').length == 0) {
       $("#load").fadeOut('slow');
+      $("#viewMore").remove();
     }
   });
 
